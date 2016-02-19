@@ -196,7 +196,7 @@ class DiscordBot(discord.Client):
 				response = "{0} - Sorry! I was unable to ping the server!".format(msg.author.mention())
 			else:
 				response = "Current player list:\n\n```\n"
-				for value in server_reply.split('&'):
+				for value in server_reply:
 					response += value
 					response += "\n"
 				response += "```"
